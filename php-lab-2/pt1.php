@@ -21,11 +21,11 @@ $x=-($b)/$a ;
 else
 {
 if ($b==0) {
-$x="vo nghiem";
+$x="vo so nghiem";
 }
 else
 {
-$x="vo so nghiem";
+$x="vo nghiem";
 }
 }
 echo "phuong trinh co nghiem x = ". $x;
