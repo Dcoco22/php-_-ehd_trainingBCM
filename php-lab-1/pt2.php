@@ -1,4 +1,3 @@
-  GNU nano 6.2                                duongcoco.php                                          
 <html>
 <head>
 <body>
