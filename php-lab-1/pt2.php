@@ -1,9 +1,14 @@
+  GNU nano 6.2                                duongcoco.php                                          
 <html>
 <head>
 <body>
 <h1>Calculator Basic</h1>
-    <form action = "" method = "post">
-    </form>
+<form action = "" method = "post">
+input a:<input type=text name= a><br>
+input b:<input type=text name= b><br>
+<br> <input type=submit value="calculate">
+</form>
+</body>
 <?php
 if (isset($_POST["a"]) && isset($_POST["b"])) {
     $a = $_POST["a"];
@@ -22,4 +27,6 @@ if (isset($_POST["a"]) && isset($_POST["b"])) {
     }
 }
 ?>
+</html>
+
 
