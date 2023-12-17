@@ -2,7 +2,7 @@
 <body>
 <h1>Factorial </h1>
 <form action="" method="get">
-enter n: <input type=text name=n><br>
+enter n: <input type=text name=n required ><br>
 <br><input type=submit value="Calculate">
 </form>
 </body>
