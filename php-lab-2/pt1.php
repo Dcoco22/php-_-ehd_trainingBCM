@@ -4,8 +4,8 @@
 </head>
 <body>
 <form action="" method="get">
-Input a: <input type=text name=a><br>
-Input b: <input type=text value="" name=b>
+Input a: <input type=text name=a required><br>
+Input b: <input type=text name=b required>
 <br>ax + b = 0
 <br><br><input type=submit value="Calculate">
 </form>
