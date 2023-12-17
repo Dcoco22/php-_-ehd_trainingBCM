@@ -3,8 +3,8 @@
 <body>
 <h1>Calculator Basic</h1>
 <form action = "" method = "post">
-input a:<input type=text name= a><br>
-input b:<input type=text name= b><br>
+input a:<input type=text name= a required><br>
+input b:<input type=text name= b required><br>
 <br> <input type=submit value="calculate">
 </form>
 </body>
