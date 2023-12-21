@@ -14,30 +14,32 @@
          <button type="submit">Login</button>
     </form>
 
-    <?php
-        $credentials = array(
-            0 => array("admin" , "123123"),
-            1 => array("user" , "123456")
-        );
-        if (isset($_POST['username'], $_POST['password'])) {
-            $username = $_POST['username'];
-            $password = $_POST['password'];
-            $check = true;
-            for ($i = 0; $i < count($credentials); $i++) {
-                if ($username == $credentials[$i][0] || $password == $credentials[$i][1]) {
-                    $check = false;
-                    echo "Welcome back my master, $username!";
-                    break;
-                }
-            }
-            if ($check) {
-                echo "User not found!";
-            }
-        }
-    
-    
-    
+  <?php
+  $groups = array(
+    0 => array("admin" , "123123"),
+    1 => array("user" , "123456")
+    );
+    if (isset($_POST['username'], $_POST['password'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    if (strlen(trim($username)) > 0 && strlen(trim($password)) > 0) {
+    $check = true;
+    for ($i = 0; $i < count($groups); $i++) {
+    if ($username == $groups[$i][0] || $password == $groups[$i][1]) {
+    $check = false;
+    echo "Log in successfully, $username!";
+    break;
+    }
+    }
+    if ($check) {
+    echo "User invalid!";
+    }
+    } else {
+    echo "pls enter somethings";
+    }
+    }
     ?>
 </body>
 </html>
+
 
